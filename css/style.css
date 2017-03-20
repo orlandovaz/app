@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    background: url("http://bcitcomp.ca/students/fananiam/Final%20Project/images/bg.jpg") repeat;
+}
+
+
+#wrapper {
+    padding: 10px;
+}
+
+
+#header {
+    padding: 0 0;
+    width: 100%;
+    height: 70px;
+    background-color: orangered;
+    margin: 10px 0 0 0;
+    box-shadow: 5px 5px 5px #777;
+    /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
+    border-radius:  --webkit-border-bottom-right-radius: 80px;
+                    -webkit-border-bottom-left-radius: 80px;
+                    -moz-border-radius-bottomright: 80px;
+                    -moz-border-radius-bottomleft: 80px;
+                    border-bottom-right-radius: 80px;
+                    border-bottom-left-radius: 80px;
+/* Opacity effect */
+    opacity:1.5;
+}
+
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; right:-200px;}
+    25%  {background-color:orangered; left:200px; right:-200px;}
+    50%  {background-color:orange; left:200px; right:-200px;}
+    75%  {background-color:yellow; left:0px; right:-200px;}
+    100% {background-color:red; left:0px; right:-200px;}
+}
+
+
+
+#comp {
+    margin: -50px 700px 0 0;
+    font: 20px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 100%;
+    color: #000000;
+}
+
+
+#content {
+    background: #CCC;
+    width: 100%;
+    height: 600px;
+    box-shadow: 5px 5px 5px #777;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 0 0;
+    border-radius:  -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+}
+
+.team {
+    height: 580px;
+    width: 550px;
+    color: black;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba (0,0,0,0.24);
+    background: white;
+    margin: 5px;
+    border-radius:  -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    box-shadow: 5px 5px 5px #777;
+}
+
+
+
+
+
+/* MENU */
+#menu {
+    width: 100%;
+    height: 70px;
+    background: #000000;
+    text-shadow: 0 -2px 1px white;
+    box-shadow: 5px 5px 5px #777;
+    /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
+    border-radius:  -webkit-border-top-left-radius: 80px;
+    -webkit-border-top-right-radius: 80px;
+    -moz-border-radius-topleft: 80px;
+    -moz-border-radius-topright: 80px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+
+#menu ul{
+    list-style: none;
+    margin: -20px 0 0 -15px;
+    position: relative;
+    
+    /* Animation to move - menu */
+    -webkit-animation: mymove 4s ; /* Safari 4.0 - 8.0 */
+    animation: mymove 4s ;
+}
+
+
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {right: -900px;}
+    to {right: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {right: -900px;}
+    to {right: 0px;}
+}
+/* End of Animation to move - menu */
+
+
+
+
+menu li {
+    position: relative;
+    float: right;
+    
+}
+
+
+li a {
+    text-decoration: none;
+    color: dodgerblue;
+    padding: 0 0 0 0;
+    float: right;
+    font-family: fantasy;
+    font-size: 22px;
+    margin: 27px 30px 0 0;
+ 
+}
+
+
+
+li a:hover {
+    color: orangered;
+}
+/* END OF MENU */
+
+
+
+
+
+
+body {
+    width: 90%;
+    color: #888;
+    font: 14px/20px Helvetica, Arial, sans-serif;
+    margin: 20px auto 0;
+    max-width: 1200px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+h1 {
+    font: 30px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-weight: 200px;
+    background: linear-gradient(to bottom, #ff6600 0%, #800000 100%);
+    border-radius: 75px;
+    box-shadow: 5px 5px 5px #777;
+    margin: 50px 0 0 10px;
+}
+
+h3 {
+    text-align: left;
+    max-width: 540px;
+    margin: 0 0 auto 20px;
+}
+
+h4 {
+    text-align: left;
+    max-width: 540px;
+    margin: 0 auto 20px;
+}
+
+h5 {
+    text-shadow:  0.1em 0.1em #333;
+    font-size: 25px;
+    color: red;
+}
+
+h6 {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+
+
+
+/* FOOTER */
+#footer {
+    background-color: black;
+    font-size: 15px;
+    font-family: fantasy;
+    color: dodgerblue;
+    height: 180px;
+    margin: -85px 0 -50px 0;
+}
+
+
+
+
+
+.social {
+    width: 100%;
+    margin: 100px 0 40px 0;
+}
+/* END OF FOOTER */
+
+
+
+
+
+/* Callback */
+
+h3 {
+    font: 20px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    color: #fff;
+    margin: 0 0 0 0;
+  }
+
+
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font: 24px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  .callbacks_nav {
+    top: 47%;
+    }
+}
