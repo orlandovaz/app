@@ -42,15 +42,29 @@
     box-shadow: 5px 5px 5px #777;
     
 }
-
+.center{
+    width: 90%;
+    margin: 0 auto;
+}
 
 h1 {
     font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 3vw;
     line-height: 4vw;
-    outline-width: 50%;
     
-    font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+   
+    background: linear-gradient(to bottom, #ff6600 0%, #800000 100%);
+    border-radius: 75px;
+    box-shadow: 5px 5px 5px #777;
+    margin: 50px 0 0 10px;
+}
+h2{
+    font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2vw;
+    line-height: 2vw;
+    
     color: #fff;
     text-align: center;
    
@@ -61,9 +75,8 @@ h1 {
 }
 
 h3 {
+    color: red;
     text-align: left;
-    max-width: 540px;
-    margin: 0 0 auto 20px;
 }
 
 h4 {
@@ -89,14 +102,7 @@ h6 {
 
 
 
-/* Callback */
 
-h3 {
-    font: 20px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-align: left;
-    color: #fff;
-    margin: 0 0 0 0;
-  }
 
 
 
