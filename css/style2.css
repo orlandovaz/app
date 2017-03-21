@@ -1,11 +1,16 @@
 @import url(normalize.css);
 @import url(menu.css);
 
+*{
+     box-sizing: border-box;
+}
 
 #content {
     background: #CCC;
+/*
     width: 100%;
     height: 600px;
+*/
     box-shadow: 5px 5px 5px #777;
     display: flex;
     flex-direction: row;
@@ -16,26 +21,39 @@
     border-radius:  -webkit-border-radius: 80px;
     -moz-border-radius: 80px;
     border-radius: 80px;
+/*    color: red;*/
 }
 
-.team {
+.sub_content {
+    flex: 1;
+/*
     height: 580px;
     width: 550px;
+*/
+    text-align: left;
+    padding: 25px;
     color: black;
     -webkit-box-shadow: 0px 2px 8px -1px rgba (0,0,0,0.24);
     background: white;
-    margin: 5px;
+    margin: 19px;
     border-radius:  -webkit-border-radius: 80px;
     -moz-border-radius: 80px;
     border-radius: 80px;
     box-shadow: 5px 5px 5px #777;
+    
 }
 
 
 h1 {
-    font: 30px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3vw;
+    line-height: 4vw;
+    outline-width: 50%;
+    
+    font: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
-    font-weight: 200px;
+    text-align: center;
+   
     background: linear-gradient(to bottom, #ff6600 0%, #800000 100%);
     border-radius: 75px;
     box-shadow: 5px 5px 5px #777;

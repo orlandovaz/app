@@ -3,21 +3,17 @@ html {
     background: url("http://bcitcomp.ca/students/fananiam/Final%20Project/images/bg.jpg") repeat;
 }
 
-
 #wrapper {
     padding: 10px;
 }
 
-
+/*Second Menu Start----------------------------------------------------------*/
 .second_menu {
-
-    
-    
     padding: 0 0;
     width: 100%;
-    height: 70px;
+    height: 5vw;
     background-color: orangered;
-    margin: 80px 0 0 0;
+    margin: 40px 0 0 0;
     box-shadow: 5px 5px 5px #777;
     /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
     border-radius:  --webkit-border-bottom-right-radius: 80px;
@@ -28,30 +24,57 @@ html {
                     border-bottom-left-radius: 80px;
 /* Opacity effect */
     opacity:1.5;
-        font: 20px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3vw;
+    line-height: 4vw;
     max-width: 100%;
     color: #000000;
 }
 .second_menu ul{
-    list-style: none;
+    list-style-type: none;
     margin: -20px 0 0 -15px;
     position: relative;
     
     /* Animation to move - menu */
-    -webkit-animation: mymove2 4s ; /* Safari 4.0 - 8.0 */
+    -webkit-animation: mymove2 4s ;  Safari 4.0 - 8.0 
     animation: mymove2 4s ;
+    text-align:left;
+}
+
+.second_menu li {
+    display: inline;
+    margin: 10px;
+}
+.second_menu li a:hover {
+    color: black;
 }
 
 .itemSecondMenu {
-    margin: -70px 700px 0 0;
+  
 }
 
+/*Second menu animation   Start*/
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove2 {
+    from {left: -900px;}
+    to {left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove2 {
+    from {left: -900px;}
+    to {left: 0px;}
+}
+/*Second menu animation   Finish*/
 
 
-/* MENU */
+/*Second Menu End----------------------------------------------------------*/
+
+
+/* MENU Start---------------------------------------------------------- */
 #menu {
     width: 100%;
-    height: 70px;
+    height: 5vw;
     background: #000000;
     text-shadow: 0 -2px 1px white;
     box-shadow: 5px 5px 5px #777;
@@ -62,18 +85,56 @@ html {
     -moz-border-radius-topright: 80px;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
+    margin-top: -20px;
 }
 
 
 #menu ul{
-    list-style: none;
-    margin: -20px 0 0 -15px;
+    list-style-type: none;
+    padding-top: 20px;
+    padding-right: 40px;
     position: relative;
     
     /* Animation to move - menu */
     -webkit-animation: mymove 4s ; /* Safari 4.0 - 8.0 */
     animation: mymove 4s ;
+    text-align:right;
 }
+
+
+#menu li{
+    display: inline;
+    padding: 0 0 0 0;
+    font-size: 2vw;
+    margin: 10px;
+}
+
+#menu li a {
+/*    margin: 157px 30px 0 0;*/
+ }
+
+
+#menu li a:hover {
+    color: orangered;
+}
+
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {right: -900px;}
+    to {right: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {right: -900px;}
+    to {right: 0px;}
+}
+
+/* MENU End---------------------------------------------------------- */
+
+
 
 
   /* Animation to move - menu       Start normalize */ 
@@ -92,64 +153,16 @@ html {
 #div4 {animation-timing-function: ease-out;}
 #div5 {animation-timing-function: ease-in-out;}
 
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    from {right: -900px;}
-    to {right: 0px;}
-}
-
-/* Standard syntax */
-@keyframes mymove {
-    from {right: -900px;}
-    to {right: 0px;}
-}
-
-
-/*Second menu animation   Start*/
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove2 {
-    from {left: -900px;}
-    to {left: 0px;}
-}
-
-/* Standard syntax */
-@keyframes mymove2 {
-    from {left: -900px;}
-    to {left: 0px;}
-}
-/*Second menu animation   Finish*/
-
 /* End of Animation to move - menu */
 
   /* Animation to move - menu       End normalize */ 
 
 
-menu li {
-    position: relative;
-    float: right;
-    
-}
 
 
-li a {
-    text-decoration: none;
-    color: dodgerblue;
-    padding: 0 0 0 0;
-    float: right;
-    font-family: fantasy;
-    font-size: 22px;
-    margin: 27px 30px 0 0;
- 
-}
 
-.second_menu li a:hover {
-    color: chartreuse;
-}
 
-#menu li a:hover {
-    color: orangered;
-}
+
 /* END OF MENU */
 
 
@@ -160,7 +173,9 @@ li a {
 body {
     width: 90%;
     color: #888;
-    font: 14px/20px Helvetica, Arial, sans-serif;
+    font: Helvetica, Arial, sans-serif;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
     margin: 20px auto 0;
     max-width: 1200px;
     text-align: center;
@@ -169,24 +184,75 @@ body {
 
 
 
-
+#menu a, .second_menu a{
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+}
 
 
 
 /* FOOTER */
-#footer {
-    background-color: black;
-    font-size: 15px;
-    font-family: fantasy;
-    color: dodgerblue;
-    height: 180px;
-    margin: -85px 0 -50px 0;
+#footer_content a{
+    color: white;
 }
 
+#footer_content {
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: black;
 
-.social {
+    
+    font-size: 1.5vw;
+    font-family: sans-serif;;
+
+    
+    width: 100%;
+
+
+    box-shadow: 5px 5px 5px #777;
+    /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
+    border-radius:  -webkit-border-bottom-left-radius: 80px;
+    -webkit-border-bottom-right-radius: 80px;
+    -moz-border-radius-bottomleft: 80px;
+    -moz-border-radius-bottomright: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    
+    
+    
+}
+
+#footer_content{
+    flex: 1;
+    -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+}
+
+#social {
+    flex: 3;
+    -webkit-flex: 3; /* Safari 6.1+ */
+    -ms-flex: 3; /* IE 10 */ 
+/*
     width: 100%;
     margin: 100px 0 40px 0;
+*/
 }
+#gototop{
+    flex: 1;
+    -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+}
+
 /* END OF FOOTER */
 
+#menu a, .second_menu a{
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+}

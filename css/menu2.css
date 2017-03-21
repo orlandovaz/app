@@ -1,0 +1,55 @@
+ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+li{
+    display: inline;
+}
+
+
+display: -webkit-flex;
+
+
+
+
+
+#footer_content{
+    flex: 1;
+    -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+}
+
+#social {
+    flex: 3;
+    -webkit-flex: 3; /* Safari 6.1+ */
+    -ms-flex: 3; /* IE 10 */ 
+/*
+    width: 100%;
+    margin: 100px 0 40px 0;
+*/
+}
+#gototop{
+    flex: 1;
+    -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+}
+
+    font-size: 2vw;
+    font-family: sans-serif;;
+    margin: -85px 0 -50px 0;
+    
+    width: 100%;
+/*    height: 5vw;*/
+    background: #000000;
+    text-shadow: 0 -2px 1px white;
+    box-shadow: 5px 5px 5px #777;
+    /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
+    border-radius:  -webkit-border-bottom-left-radius: 80px;
+    -webkit-border-bottom-right-radius: 80px;
+    -moz-border-radius-bottomleft: 80px;
+    -moz-border-radius-bottomright: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    margin-top: -20px;
