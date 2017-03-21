@@ -9,20 +9,18 @@
         <link rel="stylesheet" href="css/rationale.css">
     
     <!-- Carousel Slider -->
-        <meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-        <meta name="description" content="Elastislide - A Responsive Image Carousel" />
-        <meta name="keywords" content="carousel, jquery, responsive, fluid, elastic, resize, thumbnail, slider" />
-		<meta name="author" content="Codrops" />
+		<meta name="viewport" content="width=device-width"> 
+        <meta name="description" content="Rationale" />
+        <meta name="keywords" content="bcit, it" />
+		<meta name="author" content="comp1950" />
     
 		<link rel="shortcut icon" href="../favicon.ico"> 
         <link rel="stylesheet" type="text/css" href="css/carousel_demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/carousel_elastislide.css" />
 		<link rel="stylesheet" type="text/css" href="css/carousel_custom.css" />
 		<script src="js/modernizr.custom.17475.js"></script>
-    <script src="js/jquerypp.custom.js"></script>
-    <script src="js/jquery.elastislide.js"></script>
+        <script src="js/jquerypp.custom.js"></script>
+        <script src="js/jquery.elastislide.js"></script>
     
     
     <!--[if lt IE 9]-->
@@ -46,7 +44,7 @@
     
         <div  class="second_menu">
             <ul>
-                <li>&nbsp &nbsp  Rationale</li>
+                <li>Rationale</li>
             </ul>    
         </div>
     
@@ -64,30 +62,24 @@
 				<div class="gallery">
 					<!-- Elastislide Carousel -->
 					<ul id="carousel" class="elastislide-list">
-                        <li data-preview="images/large/1.png"><a href="#"><img src="images/small/1.gif" alt="image01" /></a></li>
-						<li data-preview="images/large/2.png"><a href="#"><img src="images/small/2.gif" alt="image02" /></a></li>
-						<li data-preview="images/large/3.png"><a href="#"><img src="images/small/3.gif" alt="image03" /></a></li>
-						<li data-preview="images/large/4.png"><a href="#"><img src="images/small/4.gif" alt="image04" /></a></li>
-						<li data-preview="images/large/5.png"><a href="#"><img src="images/small/5.gif" alt="image05" /></a></li>
-						<li data-preview="images/large/6.png"><a href="#"><img src="images/small/6.gif" alt="image06" /></a></li>
-						<li data-preview="images/large/7.png"><a href="#"><img src="images/small/7.gif" alt="image07" /></a></li>
-						<li data-preview="images/large/8.png"><a href="#"><img src="images/small/8.gif" alt="image08" /></a></li>
+                        <li data-preview="images/large/1.png"><a href="#"><img src="images/small/1.gif" alt="rationale" /></a></li>
+						<li data-preview="images/large/2.png"><a href="#"><img src="images/small/2.gif" alt="strategy solutions" /></a></li>
+						<li data-preview="images/large/3.png"><a href="#"><img src="images/small/3.gif" alt="graphic design" /></a></li>
+						<li data-preview="images/large/4.png"><a href="#"><img src="images/small/4.gif" alt="digital design" /></a></li>
+						<li data-preview="images/large/5.png"><a href="#"><img src="images/small/5.gif" alt="google analytics" /></a></li>
+						<li data-preview="images/large/6.png"><a href="#"><img src="images/small/6.gif" alt="seo" /></a></li>
+						<li data-preview="images/large/7.png"><a href="#"><img src="images/small/7.gif" alt="support" /></a></li>
+						<li data-preview="images/large/8.png"><a href="#"><img src="images/small/8.gif" alt="conclusion" /></a></li>
 					</ul>
 					<!-- End Elastislide Carousel -->
 
 					<div class="image-preview">
-						<img id="preview" src="images/large/4.jpg" />
+						<img id="preview" src="images/large/1.png" alt="rationale"/>
 					</div>
 				</div>
-
-				
-
 			</div>
 		</div>
     </div>
-
-    
-       
 </div>
     
     
@@ -95,8 +87,8 @@
     <div id="footer">
         <div id="footer_content">
             <div id="validators">
-                <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbcitcomp.ca%2Fstudents%2Ffananiam%2Fs06%2Fhomework06.html" target="_blank">[HTML Validator]</a>
-                <a href="http://www.css-validator.org/validator?uri=http%3A%2F%2Fbcitcomp.ca%2Fstudents%2Ffananiam%2Fs06%2Fhomework06.html&profile=css21&usermedium=all&warning=1&lang=en" target="_blank">[CSS Validator]
+                <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbcitcomp.ca%2Fstudents%2Ffananiam%2FFinal%2520Project%2Frationale.html" target="_blank">[HTML Validator]</a>
+                <a href="http://www.css-validator.org/validator?uri=http%3A%2F%2Fbcitcomp.ca%2Fstudents%2Ffananiam%2FFinal%2520Project%2Frationale.html&profile=css21&usermedium=all&warning=1&lang=en" target="_blank">[CSS Validator]
                 </a> 
             </div>  
         <div id="social">
@@ -113,12 +105,14 @@
         </div>
     </div>
 </footer>
+    
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquerypp.custom.js"></script>
 		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    
 		<script type="text/javascript">
 			
-			// example how to integrate with a previewer
+			// how to integrate with a previewer
 
 			var current = 0,
 				$preview = $( '#preview' ),
@@ -146,9 +140,7 @@
 				$carouselItems.removeClass( 'current-img' );
 				el.addClass( 'current-img' );
 				carousel.setCurrent( pos );
-
 			}
-
 		</script>
     
 </body>
