@@ -1,19 +1,23 @@
 
 html {
     background: url("http://bcitcomp.ca/students/fananiam/Final%20Project/images/bg.jpg") repeat;
+    box-sizing: border-box;
 }
 
 #wrapper {
     padding: 10px;
+
 }
 
 /*Second Menu Start----------------------------------------------------------*/
 .second_menu {
-    padding: 0 0;
-    width: 100%;
-    height: 5vw;
+    padding: 0;
+    width: 88%;
+    max-width: 88%;
+    height: 3vw;
     background-color: orangered;
-    margin: 40px 0 0 0;
+
+    margin-top:2vw;
     box-shadow: 5px 5px 5px #777;
     /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
     border-radius:  --webkit-border-bottom-right-radius: 80px;
@@ -25,25 +29,35 @@ html {
 /* Opacity effect */
     opacity:1.5;
     font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 3vw;
-    line-height: 4vw;
-    max-width: 100%;
     color: #000000;
+    
+
+	position:fixed;
+	background: rgba(255,69,0,0.9);
+	/*background-blend-mode: multiply, normal; 
+ 	-webkit-background-blend-mode: multiply, normal; 
+	-webkit-blend-mode: screen;*/
+    
+    
+    
+    
 }
 .second_menu ul{
     list-style-type: none;
-    margin: -20px 0 0 -15px;
     position: relative;
-    
+    top: -2vw;
     /* Animation to move - menu */
-    -webkit-animation: mymove2 4s ;  Safari 4.0 - 8.0 
-    animation: mymove2 4s ;
+    -webkit-animation: mymove2 2s ;  Safari 4.0 - 8.0 
+    animation: mymove2 2s ;
     text-align:left;
 }
 
 .second_menu li {
+    padding: 0px;
+    margin-right: 1vw;    
     display: inline;
-    margin: 10px;
+    font-size: 1.5vw;
+    line-height: 3vw;
 }
 .second_menu li a:hover {
     color: black;
@@ -74,44 +88,52 @@ html {
 /* MENU Start---------------------------------------------------------- */
 #menu {
     width: 100%;
-    height: 5vw;
+    height: 3vw;
     background: #000000;
     text-shadow: 0 -2px 1px white;
     box-shadow: 5px 5px 5px #777;
     /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
-    border-radius:  -webkit-border-top-left-radius: 80px;
-    -webkit-border-top-right-radius: 80px;
-    -moz-border-radius-topleft: 80px;
-    -moz-border-radius-topright: 80px;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
-    margin-top: -20px;
+    border-radius:  -webkit-border-top-left-radius: 8vw;
+    -webkit-border-top-right-radius: 8vw;
+    -moz-border-radius-topleft: 8vw;
+    -moz-border-radius-topright: 8vw;
+    border-top-left-radius: 8vw;
+    border-top-right-radius: 8vw;
+    margin-top: -2vw;
+    
+    
+
+	position:fixed;
+    max-width: 88%;
+	background: rgba(0,0,0,0.9);
+	/*background-blend-mode: multiply, normal; 
+ 	-webkit-background-blend-mode: multiply, normal; 
+	-webkit-blend-mode: screen;*/
 }
 
 
 #menu ul{
     list-style-type: none;
-    padding-top: 20px;
-    padding-right: 40px;
+/*    padding-top: 20px;*/
+    padding-right: 2vw;
     position: relative;
-    
+    top: -1vw;
     /* Animation to move - menu */
-    -webkit-animation: mymove 4s ; /* Safari 4.0 - 8.0 */
-    animation: mymove 4s ;
+    -webkit-animation: mymove 2s ; /* Safari 4.0 - 8.0 */
+    animation: mymove 2s ;
     text-align:right;
 }
 
 
 #menu li{
+    padding: 0px;
+/*    margin-top: -20vw;*/
+    margin-right: 10px;    
     display: inline;
-    padding: 0 0 0 0;
-    font-size: 2vw;
-    margin: 10px;
+    font-size: 1.5vw;
+    line-height: 3vw;
 }
 
-#menu li a {
-/*    margin: 157px 30px 0 0;*/
- }
 
 
 #menu li a:hover {
@@ -158,11 +180,6 @@ html {
   /* Animation to move - menu       End normalize */ 
 
 
-
-
-
-
-
 /* END OF MENU */
 
 
@@ -194,6 +211,9 @@ body {
 
 
 /* FOOTER */
+#footer{
+    margin-bottom: 12px;
+}
 #footer_content a{
     color: white;
 }
@@ -237,10 +257,7 @@ body {
     flex: 3;
     -webkit-flex: 3; /* Safari 6.1+ */
     -ms-flex: 3; /* IE 10 */ 
-/*
-    width: 100%;
-    margin: 100px 0 40px 0;
-*/
+
 }
 #gototop{
     flex: 1;
@@ -250,7 +267,8 @@ body {
 
 /* END OF FOOTER */
 
-#menu a, .second_menu a{
+
+#menu a, .second_menu a, .second_menu li{
     color: white;
     font-weight: bold;
     font-family: sans-serif;
