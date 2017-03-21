@@ -34,9 +34,15 @@
     box-shadow: 5px 5px 5px #777;
     
 }
+
 .center{
     width: 90%;
     margin: 0 auto;
+}
+
+#center {
+    width: 100px;
+    height: 154px;
 }
 
 h1 {
@@ -52,6 +58,7 @@ h1 {
     box-shadow: 5px 5px 5px #777;
     margin: 50px 0 0 10px;
 }
+
 h2{
     font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2vw;
@@ -64,4 +71,11 @@ h2{
     border-radius: 75px;
     box-shadow: 5px 5px 5px #777;
     margin: 50px 0 0 10px;
+}
+
+table {
+    border-spacing: 5px;
+}
+td {
+    padding: 15px;
 }
