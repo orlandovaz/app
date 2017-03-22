@@ -6,13 +6,23 @@ html {
 #wrapper {
     padding: 10px;
 }
-
-/*Second Menu Start----------------------------------------------------------*/
-.second_menu {
+.second_menu, #menu {
     padding: 0;
     width: 88%;
-    max-width: 88%;
+    max-width:1200px;
     height: 3vw;
+    font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*Second Menu Start----------------------------------------------------------*/
+.second_menu {
+/*
+    padding: 0;
+    width: 88%;
+    max-width:1200px;
+    height: 3vw;
+    font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+*/
+    
     background-color: orangered;
     margin-top:2vw;
     box-shadow: 5px 5px 5px #777;
@@ -25,18 +35,12 @@ html {
                     border-bottom-left-radius: 80px;
 /* Opacity effect */
     opacity:1.5;
-    font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #000000;
-    
-
 	position:fixed;
 	background: rgba(255,69,0,0.9);
 	/*background-blend-mode: multiply, normal; 
  	-webkit-background-blend-mode: multiply, normal; 
 	-webkit-blend-mode: screen;*/
-    
-    
-    
 }
 
 .second_menu ul{
@@ -82,8 +86,11 @@ html {
 
 /* MENU Start---------------------------------------------------------- */
 #menu {
-    width: 100%;
+/*
+    width: 88%;
     height: 3vw;
+    max-width: 500px
+*/
     background: #000000;
     text-shadow: 0 -2px 1px white;
     box-shadow: 5px 5px 5px #777;
@@ -96,7 +103,7 @@ html {
     border-top-right-radius: 8vw;
     margin-top: -2vw;
 	position:fixed;
-    max-width: 88%;
+    
 	background: rgba(0,0,0,0.9);
 	/*background-blend-mode: multiply, normal; 
  	-webkit-background-blend-mode: multiply, normal; 
