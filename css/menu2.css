@@ -4,14 +4,13 @@ margin: 0;
 padding: 0;
 list-style-type: none;
 }
+
 li{
     display: inline;
 }
 
 
 display: -webkit-flex;
-
-
 
 
 
@@ -30,6 +29,7 @@ display: -webkit-flex;
     margin: 100px 0 40px 0;
 */
 }
+
 #gototop{
     flex: 1;
     -webkit-flex: 1; /* Safari 6.1+ */
