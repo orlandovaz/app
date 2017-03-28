@@ -1,0 +1,407 @@
+html {
+    background: url("http://bcitcomp.ca/students/fananiam/Final%20Project/images/bg.jpg") repeat;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    padding: 10px;
+}
+.second_menu, #menu {
+    padding: 0;
+    width: 88%;
+    max-width:1200px;
+    height: 3vw;
+    font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*Second Menu Start----------------------------------------------------------*/
+.second_menu {
+    background-color: orangered;
+    margin-top:2vw;
+    box-shadow: 5px 5px 5px #777;
+    /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
+    border-radius:  --webkit-border-bottom-right-radius: 80px;
+                    -webkit-border-bottom-left-radius: 80px;
+                    -moz-border-radius-bottomright: 80px;
+                    -moz-border-radius-bottomleft: 80px;
+                    border-bottom-right-radius: 80px;
+                    border-bottom-left-radius: 80px;
+/* Opacity effect */
+    opacity:1.5;
+    color: #000000;
+	position:fixed;
+	background: rgba(255,69,0,0.9);
+	/*background-blend-mode: multiply, normal; 
+ 	-webkit-background-blend-mode: multiply, normal; 
+	-webkit-blend-mode: screen;*/
+}
+
+#SecondMenu {
+    height: 3vw;
+    list-style-type: none;
+    position: relative;
+    top: -2vw;
+    /* Animation to move - menu */
+    -webkit-animation: mymove2 2s ;  Safari 4.0 - 8.0 
+    animation: mymove2 1s ;
+    text-align:left;
+}
+
+.second_menu li {
+    padding: 0px;
+    margin-left: 2vw;
+    margin-bottom: 0px;
+    display: inline;
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
+
+.second_menu li a:hover {
+    color: black;
+}
+
+
+
+/*Second menu animation   Start*/
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove2 {
+    from {left: -900px;}
+    to {left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove2 {
+    from {left: -900px;}
+    to {left: 0px;}
+}
+/*Second menu animation   Finish*/
+
+
+/*Second Menu End----------------------------------------------------------*/
+
+
+/* MENU Start---------------------------------------------------------- */
+#menu {
+/*
+    width: 88%;
+    height: 3vw;
+    max-width: 500px
+*/
+    background: #000000;
+    text-shadow: 0 -2px 1px white;
+    box-shadow: 5px 5px 5px #777;
+    /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
+    border-radius:  -webkit-border-top-left-radius: 8vw;
+    -webkit-border-top-right-radius: 8vw;
+    -moz-border-radius-topleft: 8vw;
+    -moz-border-radius-topright: 8vw;
+    border-top-left-radius: 8vw;
+    border-top-right-radius: 8vw;
+    margin-top: -2vw;
+	position:fixed;
+    
+	background: rgba(0,0,0,0.9);
+	/*background-blend-mode: multiply, normal; 
+ 	-webkit-background-blend-mode: multiply, normal; 
+	-webkit-blend-mode: screen;*/
+}
+
+
+#menu ul{
+    list-style-type: none;
+    padding-right: 2vw;
+    position: relative;
+    top: -1vw;
+    /* Animation to move - menu */
+    -webkit-animation: mymove 2s ; /* Safari 4.0 - 8.0 */
+    animation: mymove 2s ;
+    text-align:right;
+}
+
+
+#menu li{
+    padding: 0px;
+    margin-right: 10px;    
+    display: inline;
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
+
+
+
+#menu li a:hover {
+    color: orangered;
+}
+
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {right: -900px;}
+    to {right: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {right: -900px;}
+    to {right: 0px;}
+}
+
+
+
+
+
+/* MENU End---------------------------------------------------------- */
+
+
+
+
+  /* Animation to move - menu       Start normalize */ 
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* End of Animation to move - menu */
+
+  /* Animation to move - menu       End normalize */ 
+
+
+/* END OF MENU */
+
+
+
+
+
+
+body {
+    width: 90%;
+    color: #888;
+    font: Helvetica, Arial, sans-serif;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    margin: 20px auto 0;
+    max-width: 1200px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+#menu a, .second_menu a{
+/*    123*/
+    color: red;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+
+/* FOOTER */
+#footer{
+    margin-bottom: 12px;
+}
+#footer_content a{
+    color: white;
+}
+
+#footer_content {
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: black;
+    font-size: 1.5vw;
+    font-family: sans-serif;;
+    width: 100%;
+    box-shadow: 5px 5px 5px #777;
+    /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
+    border-radius:  -webkit-border-bottom-left-radius: 80px;
+    -webkit-border-bottom-right-radius: 80px;
+    -moz-border-radius-bottomleft: 80px;
+    -moz-border-radius-bottomright: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+#footer_content{
+    flex: 1;
+    -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+}
+
+#social {
+    flex: 3;
+    -webkit-flex: 3; /* Safari 6.1+ */
+    -ms-flex: 3; /* IE 10 */ 
+}
+
+/* Zoom + effect */
+#social:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#gototop {
+    flex: 1;
+    -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+}
+
+/* Zoom + effect */
+#gototop:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/* END OF FOOTER */
+
+
+#menu a, .second_menu a, .second_menu li{
+/*    123*/
+    color: orange;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+/*------------------------------------------- Menu-----------*/
+      /* Main */
+#SecondMenu {
+    width: 94%;
+    margin: 0;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    padding-bottom: .8vw;
+    list-style: none;  
+    background-color: rgba(255,69,0,0.9);
+    border-radius: 50px;
+}
+
+#SecondMenu li {
+    float: left;
+    padding: 0 0 8px 0;
+    position: relative;
+}
+
+#SecondMenu a {
+    float: left;
+    height: 15px;
+    padding: 0 10px;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#SecondMenu li:hover > a {
+    color: #fafafa;
+}
+
+*html #SecondMenu li a:hover { /* IE6 */
+    color: #fafafa;
+}
+
+#SecondMenu li:hover > ul {
+    display: block;
+}
+
+/* Sub-menu */
+#SecondMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background-color: rgba(255,69,0,0.9);   
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#SecondMenu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+}
+
+#SecondMenu ul li:last-child { 
+    box-shadow: none;    
+}
+
+#SecondMenu ul a {    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #SecondMenu ul a { /* IE6 */   
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #SecondMenu ul a { /* IE7 */    
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover {
+    background-color: #0186ba;
+}
+
+#SecondMenu ul li:first-child a {
+    border-radius: 5px 5px 0 0;
+}
+
+#SecondMenu ul li:first-child a:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -1vw;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#SecondMenu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+#SecondMenu ul li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#SecondMenu:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html #SecondMenu             { zoom: 1; } /* IE6 */
+*:first-child+html #SecondMenu { zoom: 1; } /* IE7 */
