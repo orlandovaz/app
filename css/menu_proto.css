@@ -11,11 +11,10 @@ html {
     width: 88%;
     max-width:1200px;
     height: 3vw;
-    font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /*Second Menu Start----------------------------------------------------------*/
 .second_menu {
-    background-color: orangered;
+    background-color: #ff4500;
     margin-top:2vw;
     box-shadow: 5px 5px 5px #777;
     /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
@@ -134,7 +133,7 @@ html {
 
 
 #menu li a:hover {
-    color: orangered;
+    color: #ff4500;
 }
 
 
