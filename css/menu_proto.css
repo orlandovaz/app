@@ -12,7 +12,8 @@ html {
 	padding: 0;
 	width: 88%;
 	max-width: 1200px;
-	height: 3vw;
+	height: 6%;
+/*	height: 3vw;*/
 }
 
 
@@ -20,7 +21,8 @@ html {
 
 .second_menu {
 	background-color: #ff4500;
-	margin-top: 2vw;
+	margin-top: 2%;
+/*	margin-top: 2vw;*/
 	box-shadow: 5px 5px 5px #777;
 	/* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
 	border-radius: --webkit-border-bottom-right-radius: 80px;
@@ -40,10 +42,12 @@ html {
 }
 
 #SecondMenu {
-	height: 3vw;
+	height: 3%;
+/*	height: 3vw;*/
 	list-style-type: none;
 	position: relative;
-	top: -2vw;
+	top: -2%;
+/*	top: -2vw;*/
 	/* Animation to move - menu */
 	-webkit-animation: mymove2 2s;
 	Safari 4.0 - 8.0 animation: mymove2 1s;
@@ -55,8 +59,8 @@ html {
 	margin-left: 2vw;
 	margin-bottom: 0px;
 	display: inline;
-	font-size: 1.5vw;
-	line-height: 3vw;
+	font-size: 1.5%;
+/*	font-size: 1.5vw;*/
 }
 
 .second_menu li a:hover {
