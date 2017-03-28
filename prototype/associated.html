@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,99 +9,101 @@
     <meta name="author" content="comp1950">
     <script src="../js/jquery-3.2.0.min.js"></script>
     <title>Associated</title>
-    
-  <!-- CSS -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/associated.css">
     <link rel="alternate stylesheet" title="Projection Style" type="text/css" href="../css/projector.css">
-    
-<!--[if lt IE 9]-->
+
+    <!--[if lt IE 9]-->
     <script src="html5shiv-master/src/html5shiv.js"></script>
-  <!--[endif]-->
+    <!--[endif]-->
 </head>
-    
-    
+
+
 <body>
-<div id="wrapper">
-    
+    <div id="wrapper">
+
         <div id="menu">
             <ul>
-               <li><a href="../introduce.html">INTRODUCE</a> </li>
+                <li><a href="../introduce.html">INTRODUCE</a> </li>
                 <li><a href="../map.html">SITE-MAP</a> </li>
                 <li><a href="../prototype/home.html">PROTOTYPES</a> </li>
                 <li><a href="../rationale.html">RATIONALE</a> </li>
             </ul>
         </div>
-    
-        <div class="second_menu">
-			<ul id="SecondMenu">
-				<li><a href="home.html">Home</a> </li>
-				<li><a href="contents.html">Contents</a> </li>
-				<li id="lecture_list"><a href="javascript:void(0)">Lectures List</a>
-					<ul>
-						<li><a class="disabled" href="#">01 | tools & standards</a></li>
-						<li><a class="enabled" href="lectures.html">02 | html5</a></li>
-						<li><a class="disabled" href="#">03 | css techniques</a></li>
-						<li><a class="disabled" href="#">04 | css layouts</a> </li>
-					</ul>
-				</li>
-				<li class="itemSecondMenu"><a href="associated.html">Associated</a> </li>
-			</ul> 
-        </div>
-      
 
-          
-       
+        <div class="second_menu">
+            <ul id="SecondMenu">
+                <li><a href="home.html">Home</a> </li>
+                <li><a href="contents.html">Contents</a> </li>
+                <li id="lecture_list"><a href="javascript:void(0)">Lectures List</a>
+                    <ul>
+                        <li><a class="disabled" href="#">01 | tools & standards</a></li>
+                        <li><a class="enabled" href="lectures.html">02 | html5</a></li>
+                        <li><a class="disabled" href="#">03 | css techniques</a></li>
+                        <li><a class="disabled" href="#">04 | css layouts</a> </li>
+                    </ul>
+                </li>
+                <li class="itemSecondMenu"><a href="associated.html">Associated</a> </li>
+            </ul>
+        </div>
+
+
+
+
         <div id="content">
             <div class="sub_content">
-                  <h1>Associated</h1>
-                 <ul>
-                <li><a href="http://bcitcomp.ca/students/">students on bcitcomp.ca</a> </li>
-                <li><a href="http://my.bcit.ca/">my.bcit</a> </li>
-                <li><a href="http://www.bcit.ca/">bcit</a> </li>
-                <li><a href="http://www.bcit.ca/cas/computing/">bcit: computing</a> </li>
-            </ul>  
+                <h1>Associated</h1>
+                <ul>
+                    <li><a href="http://bcitcomp.ca/students/">students on bcitcomp.ca</a> </li>
+                    <li><a href="http://my.bcit.ca/">my.bcit</a> </li>
+                    <li><a href="http://www.bcit.ca/">bcit</a> </li>
+                    <li><a href="http://www.bcit.ca/cas/computing/">bcit: computing</a> </li>
+                </ul>
             </div>
         </div>
-</div>
-    
-  
-    
-    
-<footer>
-    <div id="footer">
-        <div id="footer_content">
-            <div id="validators"><!-- validator function to build and check automatic any page server-->
-				<a id="htmlvalidator" href="#" target="_blank">[HTML Validator]</a>
-				<a id="cssvalidator" href="#" target="_blank">[CSS Validator]</a>
-            </div>  
-        <div id="social">
-            <a href="https://www.facebook.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/facebook.gif" alt="facebook" width="40" height="40" /></a>
-            <a href="https://www.messenger.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/messenger.gif" alt="messenger" width="40" height="40" /></a>
-            <a href="https://twitter.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/twitter.gif" alt="twitter" width="40" height="40" /></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/youtube.gif" alt="youtube" width="40" height="40" /></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/instagram.gif" alt="instagram" width="40" height="40" /></a>
-            <a href="https://www.snapchat.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/snapchat.gif" alt="snapchat" width="40" height="40" /></a>
-        </div>
-        <div id="gototop">
-            <a  href="#top"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/top.png" alt="places" /></a>
-        </div>
-        </div>
     </div>
-</footer>
-    
-    
-<!-- validator function to build and check automatic any page server -->
-<script>
-$( document ).ready(function() {
-    var _host = location.hostname;
-    var pathname = window.location.pathname; 
-    var res = pathname.replace("http://", "");
-    var find = '/';
-    var re = new RegExp(find, 'g');
-    res = res.replace(re, '%2F');
-    $("#htmlvalidator").attr("href", "https://validator.w3.org/nu/?doc=http%3A%2F%2F"+_host+res  );
-    $("#cssvalidator").attr("href", "http://www.css-validator.org/validator?uri=http%3A%2F%2F"+_host+res+"&profile=css21&usermedium=all&warning=1&lang=en"  );
-});   
-</script>   
+
+
+
+
+    <footer>
+        <div id="footer">
+            <div id="footer_content">
+                <div id="validators">
+                    <!-- validator function to build and check automatic any page server-->
+                    <a id="htmlvalidator" href="#" target="_blank">[HTML Validator]</a>
+                    <a id="cssvalidator" href="#" target="_blank">[CSS Validator]</a>
+                </div>
+                <div id="social">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/facebook.gif" alt="facebook" width="40" height="40" /></a>
+                    <a href="https://www.messenger.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/messenger.gif" alt="messenger" width="40" height="40" /></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/twitter.gif" alt="twitter" width="40" height="40" /></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/youtube.gif" alt="youtube" width="40" height="40" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/instagram.gif" alt="instagram" width="40" height="40" /></a>
+                    <a href="https://www.snapchat.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/snapchat.gif" alt="snapchat" width="40" height="40" /></a>
+                </div>
+                <div id="gototop">
+                    <a href="#top"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/top.png" alt="places" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- validator function to build and check automatic any page server -->
+    <script>
+        $(document).ready(function() {
+            var _host = location.hostname;
+            var pathname = window.location.pathname;
+            var res = pathname.replace("http://", "");
+            var find = '/';
+            var re = new RegExp(find, 'g');
+            res = res.replace(re, '%2F');
+            $("#htmlvalidator").attr("href", "https://validator.w3.org/nu/?doc=http%3A%2F%2F" + _host + res);
+            $("#cssvalidator").attr("href", "http://www.css-validator.org/validator?uri=http%3A%2F%2F" + _host + res + "&profile=css21&usermedium=all&warning=1&lang=en");
+        });
+    </script>
 </body>
+
 </html>
