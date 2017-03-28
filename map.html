@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Renew COMP1950 site">
     <meta name="keyword" content="COMP1950, Renew site, Final project">
     <meta name="author" content="comp1950">
-    
+ 	<script src="../js/jquery-3.2.0.min.js"></script>
     <title>Site-Map</title>
-    
-  <!-- CSS -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/map.css">
 
-    
-<!--[if lt IE 9]-->
+
+    <!--[if lt IE 9]-->
     <script src="html5shiv-master/src/html5shiv.js"></script>
-  <!--[endif]-->
+    <!--[endif]-->
+
 </head>
-    
-    
+
+
 <body>
     <script>
-    alert(document.URL);
+//        alert(document.URL);
+
     </script>
-<div id="wrapper">
-    
+    <div id="wrapper">
+
         <div id="menu">
             <ul>
                 <li><a href="introduce.html">INTRODUCE</a> </li>
@@ -33,44 +36,90 @@
                 <li><a href="rationale.html">RATIONALE</a> </li>
             </ul>
         </div>
-    
-    
-        <div  class="second_menu">
+
+
+        <div class="second_menu">
 
             <ul>
                 <li>Site-Map </li>
-            </ul>    
+            </ul>
         </div>
-      
+
 
         <div id="content">
             <img id="map" src="images/map.jpg" alt="map">
         </div>
-</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  function upperToHyphenLower(match, offset, string) {
+    return (offset ? '-' : '') + match.toLowerCase();
+  }
     
-  
+function myFunction() {
+    var x = location.hostname;
+    var pathname = window.location.pathname; 
     
-<footer>
-    <div id="footer">
-        <div id="footer_content">
-            <div id="validators">
-                <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbcitcomp.ca%2Fstudents%2Ffananiam%2FFinal%2520Project%2Fmap.html" target="_blank">[HTML Validator]</a>
-                <a href="http://www.css-validator.org/validator?uri=http%3A%2F%2Fbcitcomp.ca%2Fstudents%2Ffananiam%2FFinal%2520Project%2Fmap.html&profile=css21&usermedium=all&warning=1&lang=en" target="_blank">[CSS Validator]
-                </a> 
-            </div>  
-        <div id="social">
-            <a href="https://www.facebook.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/facebook.gif" alt="facebook" width="40" height="40" /></a>
-            <a href="https://www.messenger.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/messenger.gif" alt="messenger" width="40" height="40" /></a>
-            <a href="https://twitter.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/twitter.gif" alt="twitter" width="40" height="40" /></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/youtube.gif" alt="youtube" width="40" height="40" /></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/instagram.gif" alt="instagram" width="40" height="40" /></a>
-            <a href="https://www.snapchat.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/snapchat.gif" alt="snapchat" width="40" height="40" /></a>
-        </div>
-        <div id="gototop">
-            <a  href="#top"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/top.png" alt="places" /></a>
-        </div>
-        </div>
+    var res = pathname.replace("http://", "");
+//    var res = res.replace("/", "%2");
+    
+    var find = '/';
+    var re = new RegExp(find, 'g');
+
+    res = res.replace(re, '%2');
+    document.getElementById("demo").innerHTML = x+"%2"+res;
+    
+}
+function myFunction2() {
+    var link = document.createElement('<a>')
+    link.href = "www.google.com";
+    link.id = "hitme"
+    $('#hitme').click();
+}
+</script>
     </div>
-</footer>
+
+
+
+    <footer>
+        <div id="footer">
+            <button onclick="myFunction()">Try it</button>
+<button  onclick="myFunction2()"  >Try it2</button>
+            <a id="hitme" href="#"> w</a>
+<p id="demo"></p>
+            <div id="footer_content">
+                <div id="validators">
+					<script src="js/jquery-3.2.0.min.js"></script>
+    				<script src="js/validator.js"></script>
+                    <a  id="htmlvalidator" href="#" target="_blank">[HTML Validator]</a>
+                    <a  id="cssvalidator"  href="#" target="_blank">[CSS Validator]</a>
+                </div>
+                <div id="social">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/facebook.gif" alt="facebook" width="40" height="40" /></a>
+                    <a href="https://www.messenger.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/messenger.gif" alt="messenger" width="40" height="40" /></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/twitter.gif" alt="twitter" width="40" height="40" /></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/youtube.gif" alt="youtube" width="40" height="40" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/instagram.gif" alt="instagram" width="40" height="40" /></a>
+                    <a href="https://www.snapchat.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/snapchat.gif" alt="snapchat" width="40" height="40" /></a>
+                </div>
+                <div id="gototop">
+                    <a href="#top"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/top.png" alt="places" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+$( document ).ready(function() {
+    var _host = location.hostname;
+    var pathname = window.location.pathname; 
+    var res = pathname.replace("http://", "");
+    var find = '/';
+    var re = new RegExp(find, 'g');
+    res = res.replace(re, '%2F');
+    $("#htmlvalidator").attr("href", "https://validator.w3.org/nu/?doc=http%3A%2F%2F"+_host+"%2F"+res  );
+    $("#cssvalidator").attr("href", "http://www.css-validator.org/validator?uri=http%3A%2F%2F"+_host+"%2F"+res+"&profile=css21&usermedium=all&warning=1&lang=en"  );
+});   
+</script>
+    bcitcomp.ca%2Fstudents%2Ffananiam%2FFinal%2520Project%2Fmap.html
 </body>
+
 </html>

@@ -6,12 +6,12 @@
     <meta name="description" content="Renew COMP1950 site">
     <meta name="keyword" content="COMP1950, Renew site, Final project">
     <meta name="author" content="comp1950">
-    
+    <script src="../js/jquery-3.2.0.min.js"></script>
     <title>Contents</title>
     
   <!-- CSS -->
     <link rel="stylesheet" href="../css/contents.css">
-    <link rel="alternate stylesheet" title="Projection Style" type="text/css"href="../css/proj.css">
+    <link rel="alternate stylesheet" title="Projection Style" type="text/css" href="../css/proj.css">
     
     
 <!--[if lt IE 9]-->
@@ -34,20 +34,19 @@
         </div>
     
         <div class="second_menu">
-
-            <ul id="SecondMenu">
-                <li><a href="home.html">Home</a> </li>
-                <li><a href="contents.html">Contents</a> </li>
-                <li id="lecture_list"><a href="javascript:void(0)">Lectures List</a> 
-                    <ul>
-                      <li><a  class="disabled" href="#" disabled='disabled'>01 | tools & standards</a></li>
-                      <li><a  class="enabled" href="lectures.html">02 | html5</a></li>
-                      <li><a  class="disabled" href="#" disabled="disabled">03 | css techniques</a></li>
-                      <li><a  class="disabled" href="#" disabled="disabled">04 | css layouts</a> </li>
-                    </ul>
-                    </li>
-                <li class="itemSecondMenu"><a href="associated.html">Associated</a> </li>
-            </ul>     
+			<ul id="SecondMenu">
+				<li><a href="home.html">Home</a> </li>
+				<li><a href="contents.html">Contents</a> </li>
+				<li id="lecture_list"><a href="javascript:void(0)">Lectures List</a>
+					<ul>
+						<li><a class="disabled" href="#">01 | tools & standards</a></li>
+						<li><a class="enabled" href="lectures.html">02 | html5</a></li>
+						<li><a class="disabled" href="#">03 | css techniques</a></li>
+						<li><a class="disabled" href="#">04 | css layouts</a> </li>
+					</ul>
+				</li>
+				<li class="itemSecondMenu"><a href="associated.html">Associated</a> </li>
+			</ul>    
         </div>
       
 
@@ -356,9 +355,8 @@
     <div id="footer">
         <div id="footer_content">
             <div id="validators">
-                <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbcitcomp.ca%2Fstudents%2Ffananiam%2FFinal%2520Project%2Fprototype%2Fcontents.html" target="_blank">[HTML Validator]</a>
-                <a href="http://www.css-validator.org/validator?uri=http%3A%2F%2Fbcitcomp.ca%2Fstudents%2Ffananiam%2FFinal%2520Project%2Fprototype%2Fcontents.html&profile=css21&usermedium=all&warning=1&lang=en" target="_blank">[CSS Validator]
-                </a> 
+				<a id="htmlvalidator" href="#" target="_blank">[HTML Validator]</a>
+				<a id="cssvalidator" href="#" target="_blank">[CSS Validator]</a>
             </div>  
         <div id="social">
             <a href="https://www.facebook.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/facebook.gif" alt="facebook" width="40" height="40" /></a>
@@ -374,7 +372,18 @@
         </div>
     </div>
 </footer>
-    
+ 	    <script>
+$( document ).ready(function() {
+    var _host = location.hostname;
+    var pathname = window.location.pathname; 
+    var res = pathname.replace("http://", "");
+    var find = '/';
+    var re = new RegExp(find, 'g');
+    res = res.replace(re, '%2F');
+    $("#htmlvalidator").attr("href", "https://validator.w3.org/nu/?doc=http%3A%2F%2F"+_host+"%2F"+res  );
+    $("#cssvalidator").attr("href", "http://www.css-validator.org/validator?uri=http%3A%2F%2F"+_host+"%2F"+res+"&profile=css21&usermedium=all&warning=1&lang=en"  );
+});   
+</script>   
 
     
 </body>

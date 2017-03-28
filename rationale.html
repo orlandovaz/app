@@ -6,7 +6,7 @@
     <meta name="description" content="Renew COMP1950 site">
     <meta name="keyword" content="COMP1950, Renew site, Final project">
     <meta name="author" content="comp1950">
-    
+    <script src="../js/jquery-3.2.0.min.js"></script>
     <title>Rationale</title>
     
     <!-- CSS -->
@@ -86,9 +86,8 @@
     <div id="footer">
         <div id="footer_content">
             <div id="validators">
-                <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbcitcomp.ca%2Fstudents%2Ffananiam%2FFinal%2520Project%2Frationale.html" target="_blank">[HTML Validator]</a>
-                <a href="http://www.css-validator.org/validator?uri=http%3A%2F%2Fbcitcomp.ca%2Fstudents%2Ffananiam%2FFinal%2520Project%2Frationale.html&profile=css21&usermedium=all&warning=1&lang=en" target="_blank">[CSS Validator]
-                </a> 
+				<a id="htmlvalidator" href="#" target="_blank">[HTML Validator]</a>
+				<a id="cssvalidator" href="#" target="_blank">[CSS Validator]</a>
             </div>  
         <div id="social">
             <a href="https://www.facebook.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/facebook.gif" alt="facebook" width="40" height="40" /></a>
@@ -141,6 +140,17 @@
 				carousel.setCurrent( pos );
 			}
 		</script>
-    
+      	    <script>
+$( document ).ready(function() {
+    var _host = location.hostname;
+    var pathname = window.location.pathname; 
+    var res = pathname.replace("http://", "");
+    var find = '/';
+    var re = new RegExp(find, 'g');
+    res = res.replace(re, '%2F');
+    $("#htmlvalidator").attr("href", "https://validator.w3.org/nu/?doc=http%3A%2F%2F"+_host+"%2F"+res  );
+    $("#cssvalidator").attr("href", "http://www.css-validator.org/validator?uri=http%3A%2F%2F"+_host+"%2F"+res+"&profile=css21&usermedium=all&warning=1&lang=en"  );
+});   
+</script>  
 </body>
 </html>
