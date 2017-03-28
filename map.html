@@ -7,7 +7,7 @@
     <meta name="description" content="Renew COMP1950 site">
     <meta name="keyword" content="COMP1950, Renew site, Final project">
     <meta name="author" content="comp1950">
- 	<script src="../js/jquery-3.2.0.min.js"></script>
+    <script src="../js/jquery-3.2.0.min.js"></script>
     <title>Site-Map</title>
 
     <!-- CSS -->
@@ -21,8 +21,7 @@
 
 <body>
     <script>
-// alert(document.URL);
-
+        // alert(document.URL);
     </script>
     <div id="wrapper">
 
@@ -48,32 +47,33 @@
             <img id="map" src="images/map.jpg" alt="map">
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-  function upperToHyphenLower(match, offset, string) {
-    return (offset ? '-' : '') + match.toLowerCase();
-  }
-    
-function myFunction() {
-    var x = location.hostname;
-    var pathname = window.location.pathname; 
-    
-    var res = pathname.replace("http://", "");
-//    var res = res.replace("/", "%2");
-    
-    var find = '/';
-    var re = new RegExp(find, 'g');
+        <script>
+            function upperToHyphenLower(match, offset, string) {
+                return (offset ? '-' : '') + match.toLowerCase();
+            }
 
-    res = res.replace(re, '%2');
-    document.getElementById("demo").innerHTML = x+"%2"+res;
-    
-}
-function myFunction2() {
-    var link = document.createElement('<a>')
-    link.href = "www.google.com";
-    link.id = "hitme"
-    $('#hitme').click();
-}
-</script>
+            function myFunction() {
+                var x = location.hostname;
+                var pathname = window.location.pathname;
+
+                var res = pathname.replace("http://", "");
+                //    var res = res.replace("/", "%2");
+
+                var find = '/';
+                var re = new RegExp(find, 'g');
+
+                res = res.replace(re, '%2');
+                document.getElementById("demo").innerHTML = x + "%2" + res;
+
+            }
+
+            function myFunction2() {
+                var link = document.createElement('<a>')
+                link.href = "www.google.com";
+                link.id = "hitme"
+                $('#hitme').click();
+            }
+        </script>
     </div>
 
 
@@ -81,11 +81,12 @@ function myFunction2() {
     <footer>
         <div id="footer">
             <div id="footer_content">
-                <div id="validators"><!-- validator function to build and check automatic any page server -->
-					<script src="js/jquery-3.2.0.min.js"></script>
-    				<script src="js/validator.js"></script>
-                    <a  id="htmlvalidator" href="#" target="_blank">[HTML Validator]</a>
-                    <a  id="cssvalidator"  href="#" target="_blank">[CSS Validator]</a>
+                <div id="validators">
+                    <!-- validator function to build and check automatic any page server -->
+                    <script src="js/jquery-3.2.0.min.js"></script>
+                    <script src="js/validator.js"></script>
+                    <a id="htmlvalidator" href="#" target="_blank">[HTML Validator]</a>
+                    <a id="cssvalidator" href="#" target="_blank">[CSS Validator]</a>
                 </div>
                 <div id="social">
                     <a href="https://www.facebook.com/" target="_blank"><img src="http://bcitcomp.ca/students/fananiam/Final%20Project/images/facebook.gif" alt="facebook" width="40" height="40" /></a>
@@ -101,21 +102,22 @@ function myFunction2() {
             </div>
         </div>
     </footer>
-    
-    
-<!-- validator function to build and check automatic any page server -->
-<script>
-$( document ).ready(function() {
-    var _host = location.hostname;
-    var pathname = window.location.pathname; 
-    var res = pathname.replace("http://", "");
-    var find = '/';
-    var re = new RegExp(find, 'g');
-    res = res.replace(re, '%2F');
-    $("#htmlvalidator").attr("href", "https://validator.w3.org/nu/?doc=http%3A%2F%2F"+_host+res  );
-    $("#cssvalidator").attr("href", "http://www.css-validator.org/validator?uri=http%3A%2F%2F"+_host+res+"&profile=css21&usermedium=all&warning=1&lang=en"  );
-});   
-</script>
-    
+
+
+    <!-- validator function to build and check automatic any page server -->
+    <script>
+        $(document).ready(function() {
+            var _host = location.hostname;
+            var pathname = window.location.pathname;
+            var res = pathname.replace("http://", "");
+            var find = '/';
+            var re = new RegExp(find, 'g');
+            res = res.replace(re, '%2F');
+            $("#htmlvalidator").attr("href", "https://validator.w3.org/nu/?doc=http%3A%2F%2F" + _host + res);
+            $("#cssvalidator").attr("href", "http://www.css-validator.org/validator?uri=http%3A%2F%2F" + _host + res + "&profile=css21&usermedium=all&warning=1&lang=en");
+        });
+    </script>
+
 </body>
+
 </html>
