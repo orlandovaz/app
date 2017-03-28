@@ -25,7 +25,8 @@ html {
 /*	margin-top: 2vw;*/
 	box-shadow: 5px 5px 5px #777;
 	/* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
-	border-radius: --webkit-border-bottom-right-radius: 80px;
+	border-radius: 50px;
+	--webkit-border-bottom-right-radius: 80px;
 	-webkit-border-bottom-left-radius: 80px;
 	-moz-border-radius-bottomright: 80px;
 	-moz-border-radius-bottomleft: 80px;
