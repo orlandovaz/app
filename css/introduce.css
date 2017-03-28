@@ -52,12 +52,12 @@ h6 {
 
 h6 {
     font-family: monospace;
-    font-size: 30px;
+    font-size: 1.5vw;
 }
 
 b {
     color: black;
-    font-size: 25px;
+    font-size: 0.5vw;
     text-shadow:
 		 1px -1px 5px rgba(0, 0, 0, 0.2),
 		-1px  1px 5px rgba(0, 0, 0, 0.2),
@@ -71,12 +71,11 @@ b {
 
 p {
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 1.5vw;
 }
 
  img {
-     max-width:200px;
-     width: auto;
+     max-width:100%;
 }
 
 /* Image Zoom + effect */
