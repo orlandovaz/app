@@ -1,12 +1,6 @@
 @import url(normalize.css);
 @import url(menu_proto.css);
 
-
-/* boxsizing */
-* {
-	box-sizing: border-box;
-}
-
 html, body {
     font-family: sans-serif;
     width: 100%;
@@ -24,10 +18,7 @@ a {
 	text-decoration: none;
 }
 	
-a:hover {
-	transition: all ease 0.5s;
-	opacity: 0.6;
-}
+
 
 img {
 	max-width: 10%;
@@ -75,61 +66,33 @@ h2 {
 /* Content of Lectures page */
 #sub_content {
     max-width: 96%;
-    flex: 1;
     background: #000000;
-    box-shadow: 5px 5px 5px #777;
-    align-items: center;
     margin: 19px;
-    border-radius:  -webkit-border-radius: 80px;
     -moz-border-radius: 80px;
-    border-radius: 80px;
     text-align: left;
     padding: 25px;
-    color: whitesmoke;
-    -webkit-box-shadow: 0px 2px 8px -1px rgba (0,0,0,0.24);    
+    color: #f5f5f5;   
 }
 
 /* Content of another prototypes pages */
 .sub_content {
     text-align: left;
     padding: 25px;
-    color: whitesmoke;
-    -webkit-box-shadow: 0px 2px 8px -1px rgba (0,0,0,0.24);
-    background: black;
+    color: #f5f5f5;
+    background: #000000;
     margin: 19px;
-    border-radius:  -webkit-border-radius: 80px;
     -moz-border-radius: 80px;
-    border-radius: 80px;
-    box-shadow: 5px 5px 5px #777;
 }
 /* End of Contents */
 
 
 /* MENU Start */
-#menu {
-    background: #000000;
-    text-shadow: 0 -2px 1px white;
-    box-shadow: 5px 5px 5px #777;
-    /* border-radius from https://css3gen.com/wp-content/cache/all/border-radius//index.html */
-    border-radius:  -webkit-border-top-left-radius: 8vw;
-    -webkit-border-top-right-radius: 8vw;
-    -moz-border-radius-topleft: 8vw;
-    -moz-border-radius-topright: 8vw;
-    border-top-left-radius: 8vw;
-    border-top-right-radius: 8vw;
-    margin-top: -2vw;
-	position:fixed;
-	background: rgba(0,0,0,0.9);
-}
-
 #menu ul{
     list-style-type: none;
-    padding-right: 2vw;
     position: relative;
-    top: -2.5vw;
+    top: -30px;
     /* Animation to move - menu */
     -webkit-animation: mymove 2s ; /* Safari 4.0 - 8.0 */
-    animation: mymove 2s ;
     text-align:right;
 }
 
@@ -137,25 +100,12 @@ h2 {
     padding: 0px;
     margin-right: 10px;    
     display: inline;
-    font-size: 1.5vw;
-    line-height: 3vw;
+    font-size: 0.7em;
+    line-height: 3em;
 }
 
 #menu li a:hover {
-    color: orangered;
-}
-
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    from {right: -900px;}
-    to {right: 0px;}
-}
-
-/* Standard syntax */
-@keyframes mymove {
-    from {right: -900px;}
-    to {right: 0px;}
+    color: #ff4500;
 }
 /* MENU End */
 
