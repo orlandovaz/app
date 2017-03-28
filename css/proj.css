@@ -74,6 +74,22 @@ h2 {
 	margin-bottom: 40px;
 }
 
+#sub_content {
+    max-width: 96%;
+    flex: 1;
+    background: #000000;
+    box-shadow: 5px 5px 5px #777;
+    align-items: center;
+    margin: 19px;
+    border-radius:  -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    text-align: left;
+    padding: 25px;
+    color: whitesmoke;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba (0,0,0,0.24);    
+}
+
 
 .sub_content {
     text-align: left;
