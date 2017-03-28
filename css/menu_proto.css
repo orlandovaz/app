@@ -488,14 +488,14 @@ body {
 }
 
 * html #SecondMenu {
-	zoom: 1;
+/*	zoom: 1;*/
 }
 
 
 /* IE6 */
 
 *:first-child+html #SecondMenu {
-	zoom: 1;
+/*	zoom: 1;*/
 }
 
 
