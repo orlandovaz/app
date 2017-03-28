@@ -148,8 +148,8 @@ $( document ).ready(function() {
     var find = '/';
     var re = new RegExp(find, 'g');
     res = res.replace(re, '%2F');
-    $("#htmlvalidator").attr("href", "https://validator.w3.org/nu/?doc=http%3A%2F%2F"+_host+"%2F"+res  );
-    $("#cssvalidator").attr("href", "http://www.css-validator.org/validator?uri=http%3A%2F%2F"+_host+"%2F"+res+"&profile=css21&usermedium=all&warning=1&lang=en"  );
+    $("#htmlvalidator").attr("href", "https://validator.w3.org/nu/?doc=http%3A%2F%2F"+_host+res  );
+    $("#cssvalidator").attr("href", "http://www.css-validator.org/validator?uri=http%3A%2F%2F"+_host+res+"&profile=css21&usermedium=all&warning=1&lang=en"  );
 });   
 </script>  
 </body>
