@@ -13,6 +13,22 @@
     <link rel="stylesheet" href="../css/lectures.css">
     <link rel="alternate stylesheet" title="Projection Style" type="text/css"href="../css/proj.css">
 
+<<<<<<< Updated upstream
+=======
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            if ($.browser.msie && $.browser.version.substr(0, 1) < 7) {
+                $('li').has('ul').mouseover(function() {
+                    $(this).children('ul').show();
+                }).mouseout(function() {
+                    $(this).children('ul').hide();
+                })
+            }
+        });
+    </script>
+>>>>>>> Stashed changes
     
 <!--[if lt IE 9]-->
     <script src="html5shiv-master/src/html5shiv.js"></script>
@@ -34,14 +50,21 @@
     
         <div  class="second_menu">
 
-            <ul>
-                <li class="itemSecondMenu"><a href="home.html">Home</a> </li>
-                <li class="itemSecondMenu"><a href="contents.html">Contents</a> </li>
-                <li class="itemSecondMenu"><a href="lectures.html">Lectures</a> </li>
+            <ul id="SecondMenu">
+                <li><a href="home.html">Home</a> </li>
+                <li><a href="contents.html">Contents</a> </li>
+                <li id="lecture_list"><a href="javascript:void(0)">Lectures List</a> 
+<!--                    <ul class="dropdown-content">-->
+                    <ul>
+                      <li><a href="#">01 | tools & standards</a></li>
+                      <li><a href="lectures.html">02 | html5</a></li>
+                      <li><a href="#">03 | css techniques</a></li>
+                      <li><a href="#">04 | css layouts</a> </li>
+                    </ul>
+                    </li>
                 <li class="itemSecondMenu"><a href="associated.html">Associated</a> </li>
             </ul>    
         </div>
-      
 
           
        
@@ -601,11 +624,12 @@
                             <li>you may also wish to include a direct link for your users to download the file</li>
                         </ul>
                         <pre>
-                            <code>&lt;audio controls="controls">
-                            &lt;source src="media/house-a-square.mp3" type="audio/mpeg">
-                            &lt;source src="media/house-a-square.ogg" type="audio/ogg">
-                            &lt;/audio>
-                            </code>
+                        <code>
+&lt;audio controls="controls">
+&lt;source src="media/house-a-square.mp3" type="audio/mpeg">
+&lt;source src="media/house-a-square.ogg" type="audio/ogg">
+&lt;/audio>
+</code>
                         </pre>
                         <audio controls="controls">
                             <source src="../media/house-a-square.mp3" type="audio/mpeg">
@@ -629,14 +653,18 @@
                             <li>attribute: <code>autoplay="autoplay"</code> begin playing video as soon as page is loaded *NOT very user friendly*</li>
                             <li>you may also wish to include a direct link for your users to download the file</li>			
                         </ul>
-                <pre><code>&lt;video 	preload="none" 
-                    controls=controls 
-                    width="355" height="200" 
-                    poster="media/poster-bear-in-water.jpg">
+                <pre>
+                <code>
+&lt;video 	preload="none" 
+    controls=controls 
+    width="355" height="200" 
+    poster="media/poster-bear-in-water.jpg">
 
-                    &lt;source src="media/bear-in-water.webm" type="video/webm"> 
-                    &lt;source src="media/bear-in-water.mp4" type="video/mp4">
-                &lt;/video>	</code></pre>		
+    &lt;source src="media/bear-in-water.webm" type="video/webm"> 
+    &lt;source src="media/bear-in-water.mp4" type="video/mp4">
+&lt;/video>	
+</code>
+                </pre>		
                           <video preload="none" controls width="355" height="200" poster="../media/poster-bear-in-water.jpeg">
                             <source src="../media/bear-in-water.webm" type="video/webm"> 
                             <source src="../media/bear-in-water.mp4" type="video/mp4">
@@ -672,10 +700,14 @@
                     <li>Creating an entry for every element can get a bit heavy, so you can use the <a href="https://github.com/aFarkas/html5shiv">HTML5shiv</a> script written by <a href="http://remysharp.com/">Remy Sharp</a>, an HTML5 guru.</li>
                     <li>Add the shiv to the head section of your HTML5 pages. If you dont download your own copy, you can use a CDN.</li>
                 <li>Insert a coded-comment that will apply the shiv ONLY with IE browsers less than version 9:
-                    <pre><code>&lt;!--[if lt IE 9]>
-                    &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">&lt;/script>
-                &lt;![endif]-->
-                    </code></pre>
+                    <pre>
+                    <code>
+&lt;!--[if lt IE 9]>
+&lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+&lt;/script>
+&lt;![endif]-->
+</code>
+                    </pre>
                 </li>
 
                     <li>Because HTML5 understands both HTML4 and XHTML tags, you can "use" HTML5 today</li>
@@ -732,9 +764,8 @@
                             <ul>
                                 <li>to set the style for an indivdual HTML tag (i.e., an inline rule), we use the following syntax:<br />				
                                 <code>
-                                &lt;h1 style="color: red;"&gt;content&lt;/h1&gt;
-
-                                </code>
+&lt;h1 style="color: red;"&gt;content&lt;/h1&gt;
+</code>
                                 </li>
 
                                 <li>in this way we're gaining more control over the display because there's more things we can do with each tag</li>
@@ -747,11 +778,11 @@
                                 <li>the main use for CSS is to set the styles for an entire document, which is done by adding the following to your HEAD section:<br />
 
                                 <code>
-                                &lt;style&gt; <br />
+&lt;style&gt; <br />
 
-                                &nbsp;&nbsp;&nbsp;h1 {color: red;}<br />
-                                &lt;/style&gt; 
-                                </code>
+&nbsp;&nbsp;&nbsp;h1 {color: red;}<br />
+&lt;/style&gt; 
+</code>
                                 </li>
 
                                 <li>in effect, isn't much different from adding style to an individual tag; except that you can manage style for ALL H1 tags in document from ONE PLACE</li>
@@ -767,12 +798,12 @@
                                     <li>then, link the document to each page using the &lt;link&gt; tag:<br />
 
                                     <code>
-                                    &lt;head&gt;<br />
+&lt;head&gt;<br />
 
-                                    &nbsp;&nbsp;&nbsp;&lt;title&gt;document&lt;/title&gt;<br />
-                                    &nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="filename.css" /&gt;<br />
-                                    &lt;/head&gt;<br />
-                                    </code>
+&nbsp;&nbsp;&nbsp;&lt;title&gt;document&lt;/title&gt;<br />
+&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="filename.css" /&gt;<br />
+&lt;/head&gt;<br />
+</code>
                                     </li>
                                 </ol>
 
