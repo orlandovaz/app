@@ -3,8 +3,6 @@ html { height: 100%; }
 *,
 *:after,
 *:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
@@ -88,7 +86,7 @@ a {
 }
 
 .codrops-top a:hover {
-	color: #000;
+	color: darkgray;
 }
 
 .codrops-top span.right {
@@ -110,14 +108,14 @@ a {
 .codrops-demos a {
     display: inline-block;
     margin: 10px 10px 10px 0;
-    color: #666;
+    color: darkgray;
     font-weight: 700;
     line-height: 30px;
     border-bottom: 4px solid transparent;
 }
 
 .codrops-demos a:hover {
-	color: #000;
+	color: darkgray;
 	border-color: #000;
 }
 
