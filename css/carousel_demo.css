@@ -86,7 +86,7 @@ a {
 }
 
 .codrops-top a:hover {
-	color: darkgray;
+	color: #373737;
 }
 
 .codrops-top span.right {
@@ -108,14 +108,14 @@ a {
 .codrops-demos a {
     display: inline-block;
     margin: 10px 10px 10px 0;
-    color: darkgray;
+    color: #373737;
     font-weight: 700;
     line-height: 30px;
     border-bottom: 4px solid transparent;
 }
 
 .codrops-demos a:hover {
-	color: darkgray;
+	color: #373737;
 	border-color: #000;
 }
 
