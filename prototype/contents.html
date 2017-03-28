@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="../css/contents.css">
     <link rel="alternate stylesheet" title="Projection Style" type="text/css" href="../css/proj.css">
     
-    
 <!--[if lt IE 9]-->
     <script src="html5shiv-master/src/html5shiv.js"></script>
   <!--[endif]-->
@@ -354,7 +353,7 @@
 <footer>
     <div id="footer">
         <div id="footer_content">
-            <div id="validators">
+            <div id="validators"><!-- validator function to build and check automatic any page server-->
 				<a id="htmlvalidator" href="#" target="_blank">[HTML Validator]</a>
 				<a id="cssvalidator" href="#" target="_blank">[CSS Validator]</a>
             </div>  
@@ -372,7 +371,10 @@
         </div>
     </div>
 </footer>
- 	    <script>
+    
+    
+<!-- validator function to build and check automatic any page server -->
+<script>
 $( document ).ready(function() {
     var _host = location.hostname;
     var pathname = window.location.pathname; 
