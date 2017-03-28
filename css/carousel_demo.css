@@ -157,10 +157,12 @@ a {
 	width: 100%;
 	max-width: 950px;
 	margin: 0 auto;
-	border-radius: 20px;
-    box-shadow: 5px 5px 5px #777;
 	position: relative;
 	background: #000 url(../images/black_denim.png);
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-box-shadow: 5px 5px 5px #777;
+    -webkit-box-shadow: 5px 5px 5px #777;
 }
 
 .lt-ie8 .elastislide-list {
