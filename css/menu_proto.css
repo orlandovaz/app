@@ -114,7 +114,8 @@ html {
 	background: #000000;
 	text-shadow: 0 -2px 1px white;
 	box-shadow: 5px 5px 5px #777;
-	border-radius: -webkit-border-top-left-radius: 8vw;
+	border-radius: 50px;
+	-webkit-border-top-left-radius: 8vw;
 	-webkit-border-top-right-radius: 8vw;
 	-moz-border-radius-topleft: 8vw;
 	-moz-border-radius-topright: 8vw;
