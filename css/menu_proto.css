@@ -15,14 +15,6 @@ html {
 }
 /*Second Menu Start----------------------------------------------------------*/
 .second_menu {
-/*
-    padding: 0;
-    width: 88%;
-    max-width:1200px;
-    height: 3vw;
-    font:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-*/
-    
     background-color: orangered;
     margin-top:2vw;
     box-shadow: 5px 5px 5px #777;
@@ -43,19 +35,21 @@ html {
 	-webkit-blend-mode: screen;*/
 }
 
-.second_menu ul{
+#SecondMenu {
+    height: 3vw;
     list-style-type: none;
     position: relative;
     top: -2vw;
     /* Animation to move - menu */
     -webkit-animation: mymove2 2s ;  Safari 4.0 - 8.0 
-    animation: mymove2 2s ;
+    animation: mymove2 1s ;
     text-align:left;
 }
 
 .second_menu li {
     padding: 0px;
-    margin-left: 3vw;
+    margin-left: 2vw;
+    margin-bottom: 0px;
     display: inline;
     font-size: 1.5vw;
     line-height: 3vw;
@@ -64,6 +58,7 @@ html {
 .second_menu li a:hover {
     color: black;
 }
+
 
 
 /*Second menu animation   Start*/
@@ -151,6 +146,10 @@ html {
     to {right: 0px;}
 }
 
+
+
+
+
 /* MENU End---------------------------------------------------------- */
 
 
@@ -199,7 +198,8 @@ body {
 
 
 #menu a, .second_menu a{
-    color: white;
+/*    123*/
+    color: red;
     font-weight: bold;
     font-family: sans-serif;
     text-decoration: none;
@@ -271,8 +271,137 @@ body {
 
 
 #menu a, .second_menu a, .second_menu li{
-    color: white;
+/*    123*/
+    color: orange;
     font-weight: bold;
     font-family: sans-serif;
     text-decoration: none;
 }
+/*------------------------------------------- Menu-----------*/
+      /* Main */
+#SecondMenu {
+    width: 94%;
+    margin: 0;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    padding-bottom: .8vw;
+    list-style: none;  
+    background-color: rgba(255,69,0,0.9);
+    border-radius: 50px;
+}
+
+#SecondMenu li {
+    float: left;
+    padding: 0 0 8px 0;
+    position: relative;
+}
+
+#SecondMenu a {
+    float: left;
+    height: 15px;
+    padding: 0 10px;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#SecondMenu li:hover > a {
+    color: #fafafa;
+}
+
+*html #SecondMenu li a:hover { /* IE6 */
+    color: #fafafa;
+}
+
+#SecondMenu li:hover > ul {
+    display: block;
+}
+
+/* Sub-menu */
+#SecondMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background-color: rgba(255,69,0,0.9);   
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#SecondMenu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+}
+
+#SecondMenu ul li:last-child { 
+    box-shadow: none;    
+}
+
+#SecondMenu ul a {    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #SecondMenu ul a { /* IE6 */   
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #SecondMenu ul a { /* IE7 */    
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover {
+    background-color: #0186ba;
+}
+
+#SecondMenu ul li:first-child a {
+    border-radius: 5px 5px 0 0;
+}
+
+#SecondMenu ul li:first-child a:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -1vw;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#SecondMenu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+#SecondMenu ul li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#SecondMenu:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html #SecondMenu             { zoom: 1; } /* IE6 */
+*:first-child+html #SecondMenu { zoom: 1; } /* IE7 */
