@@ -34,6 +34,7 @@
     
     
 <body>
+<a id="home"></a>
 <div id="wrapper">
     
         <div id="menu">
@@ -66,9 +67,24 @@
        
         <div id="content">
             <div id="sub_content">
+            <div class="center">    
+            <ul id="pagemenu" >
+                <li><a href="#home">Home</a> </li>
+                <li><a href="#agenda">Agenda</a> </li>
+                <li><a href="#Hypertex">Hypertext Markup Language</a> </li>
+                <li><a href="#HTML">HTML Created</a> </li>
+                <li><a href="#HTML_loose">HTML on the loose!</a> </li>
+                <li><a href="#Attempting">Attempting to fix the problem</a> </li>
+                <li><a href="#Tighten">Tighten up!</a> </li>
+                <li><a href="#different_XHTML">What is different about XHTML?</a> </li>
+                <li><a href="#XHTML_Documents">XHTML Documents</a> </li>
+            </ul>
+            </div>
+            <a id="agenda"></a>    
                   	<h1>lecture two: HTML5</h1>
                     <h2>Agenda</h2>
                     <div class="contblock">
+                        <a id="Hypertex"></a> 
                         <ul>	
                             <li>Quiz #1</li>
                             <li>Markup Languages: HTML, XHTML, HTML5</li>
@@ -77,11 +93,13 @@
                             <li>CSS review</li>
                         </ul>
                     </div>
+                  
                 <h2>Hypertext Markup Language</h2>
                 <div class="contblock">
                     <p>
                         It all starts here in one form or another: HTML
                     </p>
+                     <a id="HTML"></a> 
                     <ul>
                         <li>What started as a language defined by <a href="http://www.w3.org/MarkUp/SGML/">SGML</a> <em>(Standard Generalized Markup Language)</em>, HTML is used to mark up billions of pages, making up the bulk of the web.</li>
                         <li>From a common origin, 3 distinct version have emerged:
@@ -95,6 +113,7 @@
  
                 <h2>HTML Created</h2>
                 <div class="contblock">
+                    
                     <ul>
                         <li>Late 1991, Tim Berners-Lee releases the first iteration of what would become HTML 2.0 (there was no real 1.0+)</li>
                         <li>HTML was a language created at the dawn of the Web, using SGML (Standard Generalized Markup Language) as a template</li>
@@ -106,7 +125,9 @@
                         <li>A lot of early sites are poorly designed</li>
 
                     </ul>
+                     <a id="HTML_loose"></a>
                                 <h4>HTML 4.01 template</h4>
+                
                 <textarea style="width:90%;height:170px;" rows="10" cols="40">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
                    "http://www.w3.org/TR/html4/loose.dtd"&gt;
                 &lt;html&gt;
@@ -126,11 +147,12 @@
                             <li>The problem was not <em>entirely</em> with the language or the authors.  It was with the <em>browsers</em>.</li>
                             <li>Browser manufacturers created User Agents that would read code, interpret it, fix any mistakes and render a page, without any visible errors.</li>
                             <li>It was this that led to coders exploiting problems in browsers and creating pages that broke when new specs or updated User Agents (browsers) came out</li>
-
+<a id="Attempting"></a>
                     <li>Okay, so now there is a problem. <strong>Millions</strong> of pages are being produced with sloppy code because the UAs let it happen</li>
                     <li>The web is becoming filled with Tag Soup that makes it hard to index, with search tools having to trust things like META keywords and descriptions</li>
                     <li>A better solution is required: Get Strict!</li>
                         </ul>	
+                     
                 </div>
                 <h2>Attempting to fix the problem</h2>
                 <div class="contblock">
@@ -145,6 +167,7 @@
                     <li>To get pages to render using the appropriate DOCTYPE of XHTML, pages would have to be delivered with the MIME type of <code>application/xhtml+xml</code></li>
                     <li>Using that MIME type, however, brought with it a rather dire proviso:</li>
                     <li>The error handling specified in XHTML 1.1 meant <strong>all errors will cause the browser to cease rendering</strong></li>
+<a id="Tighten"></a>
                     <li>Yes, you read that correctly. That means <strong>any</strong> error will throw an warning to the user and the page will not be shown</li>
                     <li>Try to imagine the Web actually working in this way</li>
                     <li>Why was this done? Because the developers of XHTML wanted to force strict coding rules so that the Web could be seen as a giant application.  Reliable code on every page meant you could use the data anywhere</li>
@@ -159,7 +182,7 @@
                     <li>A reformation of HTML reformulated in XHTML</li>
                     <li>First major update to HTML since the 4.01 specification was released in 1999.</li>
                     <li><strong>Note</strong> - <em>XHTML Development has ceased entirely. More on that later</em></li>
-
+<a id="different_XHTML"></a>
                     <li>Better, more predictable coding patterns</li>
                     <li>"verifiable" or "well-formed" code can be produced</li>
                     <li>Forces a higher standard of HTML</li>
@@ -244,7 +267,7 @@
 
                     <li><code>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;</code></li>
                 </ul></li>
-
+<a id="XHTML_Documents"></a>
                 <li>Optional Element: An XHTML document should also declare the type and character encoding in the head section to ensure the server sends the correct content-type header: <br />
                 <code>&lt;meta http-equiv="Content-Type" content="text/html" charset="UTF-8"&gt;</code>
                 </li>
