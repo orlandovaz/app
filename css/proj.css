@@ -181,3 +181,9 @@ img {
     height: auto;
     padding: 2px;
 }
+
+/* Codes on body */
+code {
+    color: yellow;
+    background: blue;
+}
